@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
 .app{
   background: #141414;
   color: white;
@@ -29,3 +29,98 @@
   display: flex;
   justify-content: center;
 }
+.no{
+ margin-left: 100px;
+ margin-right: 70px;
+ 
+}
+.yes{
+  display: flex;
+  justify-content: space-between;
+}
+.mag{
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+.form{
+  
+  padding: 140px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 729px;
+  height: 632px;
+  margin-left: 380px;
+  
+  
+}
+.form h1{
+  font-size: 20px;
+
+}
+.form .separation{
+  width: 500px;
+  height: 1px;
+  background-color: red;
+}
+.form .corp-formulaire{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  
+}
+.form .corp-formulaire .groupe{
+ position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form .corp-formulaire .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.form .corp-formulaire .gauche .groupe i {
+position: absolute;
+left: 0;
+top: 30px;
+padding: 9px 9px;
+color: red;
+
+}
+.form .corp-formulaire .droite{
+  margin-left: 40px;
+}
+.form .corp-formulaire .droite .groupe{
+  width: 100%;
+}
+.form .corp-formulaire .droite .groupe textarea{
+  margin-top: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid red;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 175px;
+  }
+  .form .peid-formulaire button{
+      margin-top: 10px;
+      color: white;
+      background-color: red;
+      border: none;
+      font-size: 15px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      outline: none;
+      cursor: pointer;
+      transition: transform 0.5s;
+  } 
+  .form .peid-formulaire button :hover {
+      transform: scale(1.5);
+  }
+  
+  
+  
+  

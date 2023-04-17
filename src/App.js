@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import Navigation from './Components/Navigation';
 import Movielist from './Components/Movielist';
+import { Route, Routes } from 'react-router-dom';
+import Contact from './Components/Contact';
+import Trailer from './Components/Trailer';
 
 function App() {
   const [movies, setmovies] = useState([
@@ -111,7 +114,13 @@ function App() {
     <div className='app'>
       <Navigation settext={settext} setrate={setrate}/>
       
-      <Movielist movies={movies} setmovies={setmovies} text={text} rate={rate}/>
+      
+      <Routes>
+        <Route path="/" element={<Movielist movies={movies} setmovies={setmovies} text={text} rate={rate}/>} />
+        
+        <Route path="contact" element={ <Contact/> } />
+        <Route path="trailer/:name" element= { <Trailer movies={movies}/> } />
+      </Routes>
       </div>
   );
 }

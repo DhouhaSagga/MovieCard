@@ -1,9 +1,11 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 export default function Moviecards({el}) {
   return (
     <div>
+      <Link  to={`/trailer/${el.name}`} style={{textDecoration:"none" ,color:"white"}}>
       <Card style={{ width: '18rem',background:"black" ,margin:"20px 10px", position:"static"}} className='moviecard'>
       <Card.Img variant="top" src={el.posterurl} style={{minHeight:"250px" ,maxHeight:"250px"}} />
       <Card.Body>
@@ -15,6 +17,7 @@ export default function Moviecards({el}) {
        
       </Card.Body>
     </Card>
+    </Link>
     </div>
   )
 }

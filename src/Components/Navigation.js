@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 function Navigation({settext ,setrate}) {
   return (
 <Navbar bg="dark" expand="lg" variant='dark' className='navbares'>
@@ -17,10 +18,8 @@ function Navigation({settext ,setrate}) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">ALL Movies</Nav.Link>
-            <Nav.Link href="#action2">Kids</Nav.Link>
-            <Nav.Link href="#action2">Comedie</Nav.Link>
-            <Nav.Link href="#action2">Action</Nav.Link>
+            <Nav.Link href="#action1"><Link to="/" style={{textDecoration:"none" ,color:"grey"}}> ALL Movies</Link></Nav.Link>
+            <Nav.Link href="#action2"><Link to="/Contact" style={{textDecoration:"none" ,color:"grey"}}>Contact</Link></Nav.Link>
           </Nav>
           <div className='stars'>
           <ReactStars count={5} size={24} activeColor="#ffd700" onChange={(newRating)=>setrate(newRating)}/>
